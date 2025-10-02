@@ -1,15 +1,47 @@
 <html>
     <head>
+        <title>The Card hath been opened</title>
         <style>
+            .zoom {
+                padding: 50px;
+                transition: transform .2s;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+            .zoom:hover {
+                transform: scale(1.5);
+            }
             body {
                 background-image: url('confetti.jpeg');
                 background-size: 100% 100%;
+                font-family: Georgia, serif;
             }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                size = 100
+                }
+            h1{
+                color: green;
+            }
+            
+            p{
+                color: red;
+                font-size: 25px;
+            }
+            
         </style>
     </head>
     <body>
-        <p>
-            You have opened the card!
-        </p>
+        <h1 style="text-align:center;">
+             The card hath been opened
+        </h1>
+        <p style="text-align:center;">You did it!</p>
+        <img src="yippee.gif" alt="Hooray!" width="300" height="300" class="zoom">
+        <br>
+        <p></p>
+        <button type="button" onclick="document.location='index.html'">Close the card!</button>
     </body>
 </html>
