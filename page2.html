@@ -3,14 +3,12 @@
         <title>The Card hath been opened</title>
         <style>
             .zoom {
-                padding: 50px;
+                padding: 0px;
                 transition: transform .2s;
-                width: 200px;
-                height: 200px;
                 margin: 0 auto;
             }
             .zoom:hover {
-                transform: scale(1.5);
+                transform: scale(1.2);
             }
             body {
                 background-image: url('confetti.jpeg');
@@ -21,7 +19,6 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                size = 100
                 }
             h1{
                 color: green;
@@ -31,7 +28,18 @@
                 color: red;
                 font-size: 25px;
             }
-            
+            .button {
+                border: solid;
+                color: black;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button1 {background-color: #04AA6D;}
         </style>
     </head>
     <body>
@@ -39,9 +47,13 @@
              The card hath been opened
         </h1>
         <p style="text-align:center;">You did it!</p>
-        <img src="yippee.gif" alt="Hooray!" width="300" height="300" class="zoom">
+        <img src="yippee.gif" alt="Hooray!" width="300px" height="300px" class="zoom">
+        <br>
+        <audio controls>
+            <source src="yippee.mp3" type="audio/mpeg" />
+        </audio>
         <br>
         <p></p>
-        <button type="button" onclick="document.location='index.html'">Close the card!</button>
+        <button class="button button1 zoom" width="50px" height="25px" onclick="document.location='index.html'">Close the card!</button>
     </body>
 </html>

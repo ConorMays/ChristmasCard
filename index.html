@@ -2,9 +2,17 @@
 <html>
     <head>
         <title>Card</title>
-        <script>
-            
-        </script>
+        <style>
+            .zoom {
+                transition: transform .2s;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+            .zoom:hover {
+                transform: scale(1.2);
+            }
+        </style>
         <style type="text/css">
             body {
                 background-image: url('tree.jpeg');
@@ -19,13 +27,25 @@
             p{
                 color: red;
             }
+            .button {
+                border: solid;
+                color: black;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button1 {background-color: #04AA6D;}
         </style>
     </head>
     <body>
         <h1>Merry Christmas</h1>    
-        <img src="presents.jpeg">
-        <img src="eyes.jpeg">
+        <img src="presents.jpeg" class="zoom">
+        <img src="eyes.jpeg" class="zoom">
         <br>
-        <button type="button" onclick="document.location='page2.html'">Open the card!</button>
+        <button class="button button1" onclick="document.location='page2.html'">Open the card!</button>
     </body>
 </html>
